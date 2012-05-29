@@ -4,7 +4,7 @@ VERSION=$(shell awk '/Version/ { print $$2 }' iprediaos-gnome-shell-favorite-app
 all:
 
 install: 
-	@install -D  org.gnome.shell.gschema.override ${PREFIX} /usr/share/glib-2.0/schemas/org.gnome.shell.gschema.override
+	@install -D  org.gnome.shell.gschema.override ${PREFIX}/usr/share/glib-2.0/schemas/org.gnome.shell.gschema.override
 
 archive:
 	@git archive --prefix=$(NAME)-$(VERSION)/ HEAD -o $(NAME)-$(VERSION).tar
