@@ -1,2 +1,2 @@
 [org.gnome.shell]
-favorite-apps=['mozilla-firefox.desktop', 'i2p-router-console.desktop', 'evolution.desktop', 'empathy.desktop', 'rhythmbox.desktop', 'shotwell.desktop', 'openoffice.org-writer.desktop', 'nautilus.desktop', 'anaconda.desktop']
+favorite-apps=['mozilla-firefox.desktop', 'i2p-router-console.desktop', 'empathy.desktop', 'rhythmbox.desktop', 'shotwell.desktop', 'openoffice.org-writer.desktop', 'nautilus.desktop', 'evolution.desktop']
