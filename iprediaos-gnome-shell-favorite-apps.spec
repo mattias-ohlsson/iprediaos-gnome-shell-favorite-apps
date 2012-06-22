@@ -34,6 +34,16 @@ make install PREFIX=$RPM_BUILD_ROOT
 rm -rf $RPM_BUILD_ROOT
 
 
+%post
+# compiles all the GSettings XML schema files
+%{_bindir}/glib-compile-schemas /usr/share/glib-2.0/schemas >/dev/null 2>&1 || :
+
+
+%postun
+# compiles all the GSettings XML schema files
+%{_bindir}/glib-compile-schemas /usr/share/glib-2.0/schemas >/dev/null 2>&1 || :
+
+
 %files
 %defattr(-,root,root,-)
 %doc
